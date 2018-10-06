@@ -14,8 +14,10 @@ while play_again_options.include?(play_again)
   puts "\nWould you like to play again? (Y/N):"
   play_again = gets.strip
   
-  unless all_options.include?(play_again)
+  until all_options.include?(play_again)
     puts "Sorry. That is not a valid response. Please try again."
+    puts "\nWould you like to play again? (Y/N):"
+    play_again = gets.strip
   end
 end
 
